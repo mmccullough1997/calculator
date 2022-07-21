@@ -1,0 +1,65 @@
+{
+    "-MiBsfuTafbEQ7eAULxV" : {
+      "name" : "Roof Repair",
+      "firebaseKey" : "-MiBsfuTafbEQ7eAULxV",
+      "description" : "I need to repair the roof lol",
+      "cost" : "15.99",
+      "due_date": "2022-06-10",
+      "paid": true,
+      "uid": "EIOAzruUaCRtTNsaZ4hHqgVonya2"
+    },
+    "-MiBt86VzkC-EGmJnxjm" : {
+      "name" : "Air Vent",
+      "firebaseKey" : "-MiBt86VzkC-EGmJnxjm",
+      "description" : "I need a new air vent haha",
+      "cost" : "30.98",
+      "due_date": "2022-07-10",
+      "paid": false,
+      "uid": "EIOAzruUaCRtTNsaZ4hHqgVonya2"
+    },
+    "-MiBtwf1BwN9pGavQeR3" : {
+      "name" : "Toilet Paper",
+      "firebaseKey" : "-MiBtwf1BwN9pGavQeR3",
+      "description" : "I be out",
+      "cost" : "20.00",
+      "due_date": "2022-08-10",
+      "paid": false,
+      "uid": "EIOAzruUaCRtTNsaZ4hHqgVonya2"
+    },
+    "-MiBuOfHv9NCKB_cneij" : {
+      "name" : "Board Game",
+      "firebaseKey" : "-MiBuOfHv9NCKB_cneij",
+      "description" : "I need a board game!",
+      "cost" : "45.96",
+      "due_date": "2023-06-10",
+      "paid": true,
+      "uid": "EIOAzruUaCRtTNsaZ4hHqgVonya2"
+    },
+    "-MiBulenBnY8by9Xn7q1" : {
+      "name" : "Trail Mix",
+      "firebaseKey" : "-MiBulenBnY8by9Xn7q1",
+      "description" : "cant have too much",
+      "cost" : "17.99",
+      "due_date": "2022-12-10",
+      "paid": true,
+      "uid": "EIOAzruUaCRtTNsaZ4hHqgVonya2"
+    },
+    "-MiBv9_aOEJQWoobjz_U" : {
+      "name" : "Roof Repair II",
+      "firebaseKey" : "-MiBv9_aOEJQWoobjz_U",
+      "description" : "I need to repair the roof again lol",
+      "cost" : "236.87",
+      "due_date": "2022-06-12",
+      "paid": false,
+      "uid": "EIOAzruUaCRtTNsaZ4hHqgVonya2"
+    },
+    "-MiBvQiWr6XNwNa1i3-0" : {
+      "name" : "Roof Repair III",
+      "firebaseKey" : "-MiBvQiWr6XNwNa1i3-0",
+      "description" : "again lol",
+      "cost" : "1345.87",
+      "due_date": "2022-07-10",
+      "paid": false,
+      "uid": "EIOAzruUaCRtTNsaZ4hHqgVonya2"
+    }
+  }
