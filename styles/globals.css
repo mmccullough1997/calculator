@@ -20,3 +20,16 @@ a {
 body {
   background-color: black;
 }
+
+.homeHeader {
+  color: white;
+  text-align: center;
+}
+
+.unpaidExpense {
+  background-color: red;
+}
+
+.paidExpense {
+  background-color: green;
+}
