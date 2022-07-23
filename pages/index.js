@@ -18,11 +18,14 @@ function Home() {
   }, []);
 
   return (
-    <div className="d-flex flex-wrap">
-      {expenses.map((expense) => (
-        <ExpenseCard key={expense.firebaseKey} expenseObj={expense} onUpdate={getAllExpenses} />
-      ))}
-    </div>
+    <>
+      <h1 className="homeHeader">Welcome, {user.displayName}!</h1>
+      <div className="d-flex flex-wrap">
+        {expenses.map((expense) => (
+          <ExpenseCard key={expense.firebaseKey} expenseObj={expense} onUpdate={getAllExpenses} />
+        ))}
+      </div>
+    </>
   );
 }
 export default Home;

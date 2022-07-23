@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+// import { useEffect } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { deleteExpense } from '../api/expensesData';
+import { deleteExpense, getSingleExpense, updateExpenses } from '../api/expensesData';
 
 function ExpenseCard({ expenseObj, onUpdate }) {
   const deleteTheExpense = () => {
@@ -10,9 +12,19 @@ function ExpenseCard({ expenseObj, onUpdate }) {
     }
   };
 
+  const markAsPaid = () => {
+    if (window.confirm('Mark As Paid?')) {
+      getSingleExpense(expenseObj.firebaseKey).then(() => {
+        const obj = { ...expenseObj };
+        obj.paid = true;
+        updateExpenses(obj).then(() => onUpdate());
+      });
+    }
+  };
+
   return (
     <Card style={{ width: '18rem', margin: '10px' }}>
-      <Card.Body>
+      <Card.Body className={expenseObj.paid ? 'paidExpense' : 'unpaidExpense'}>
         <Card.Title>{expenseObj.name}</Card.Title>
         <hr />
         <p className="card-text bold">{expenseObj.description}</p>
@@ -25,6 +37,9 @@ function ExpenseCard({ expenseObj, onUpdate }) {
         <Button variant="danger" onClick={deleteTheExpense} className="m-2">
           DELETE
         </Button>
+        <>
+          {expenseObj.paid === false ? <Button variant="success" onClick={markAsPaid} className="m-2">Paid</Button> : ''}
+        </>
       </Card.Body>
     </Card>
   );
@@ -36,6 +51,7 @@ ExpenseCard.propTypes = {
     description: PropTypes.string,
     cost: PropTypes.string,
     due_date: PropTypes.string,
+    paid: PropTypes.bool,
     firebaseKey: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
